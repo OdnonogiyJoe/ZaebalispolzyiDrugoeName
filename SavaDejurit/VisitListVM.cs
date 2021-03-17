@@ -24,7 +24,7 @@ namespace SavaDejurit
         {
             if (model.SelectedStudent != null)
             {
-                Title = $"История посещений студента {model.SelectedStudent.Name}";
+                Title = $"История дежурств студента {model.SelectedStudent.Name}";
                 NotifyPropertyChanged("Title");
                 Visits = new ObservableCollection<DateTime>(model.SelectedStudent.VisitLog);
                 NotifyPropertyChanged("Visits");

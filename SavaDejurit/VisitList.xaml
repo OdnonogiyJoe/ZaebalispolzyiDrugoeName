@@ -9,8 +9,8 @@
       Title="VisitList">
 
         <DockPanel Margin="5">
-            <TextBlock Text="{Binding Title}" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
-            <Button Content="Назад" DockPanel.Dock="Bottom" Width="200" Command="{Binding Back}" Padding="5" Margin="0 5 0 0"/>
+            <TextBlock Text="{Binding Title}" FontSize="16" HorizontalAlignment="Left" DockPanel.Dock="Top"/>
+            <Button Content="Вернуться назад" DockPanel.Dock="Bottom" Width="100" Command="{Binding Back}" Padding="3" HorizontalAlignment="Center"/>
             <ListBox DockPanel.Dock="Top" ItemsSource="{Binding Visits}"/>
         </DockPanel>
 </Page>

@@ -11,8 +11,7 @@ namespace SavaDejurit
 
         public event EventHandler StudentsChanged;
         public event EventHandler SelectedStudentChanged;
-        public Student SelectedStudent
-        {
+        public Student SelectedStudent {
             get => selectedStudent;
             set { selectedStudent = value; SelectedStudentChanged?.Invoke(this, null); }
         }

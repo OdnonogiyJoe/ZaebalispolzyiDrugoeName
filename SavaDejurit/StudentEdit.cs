@@ -12,13 +12,13 @@ namespace SavaDejurit
 
         public void Add()
         {
-            Students.Add(new Student { FirstName = "Имя", LastName = "Фамилия" });
+            Students.Add(new Student { FirstName = "Имя", LastName = "Фамилия", FatherName = "Отчество" });
             Save();
         }
 
         public StudentEdit()
         {
-            Students.Add(new Student { FirstName = "Студент", LastName = "Студент", FatherName = "Студент" });
+            Students.Add(new Student { FirstName = "qw", LastName = "er", FatherName = "ty" });
             Load();
         }
 
@@ -38,10 +38,10 @@ namespace SavaDejurit
         internal void MarkDate(Student student)
         {
             int index = Students.IndexOf(student);
-            Students[index].VisitLog.Add(DateTime.Now);
+            Students[index].VisitLog.Add(DateTime.Today);
             Save();
         }
-
+        
         public void Save()
         {
             var json = JsonSerializer.Serialize(Students, typeof(List<Student>));

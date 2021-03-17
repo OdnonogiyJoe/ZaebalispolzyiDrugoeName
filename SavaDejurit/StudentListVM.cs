@@ -16,8 +16,7 @@ namespace SavaDejurit
         public MvvmCommand VisitLog { get; set; }
         public MvvmCommand MarkDate { get; set; }
 
-        public Student SelectedStudent
-        {
+        public Student SelectedStudent {
             get => model.SelectedStudent;
             set
             {

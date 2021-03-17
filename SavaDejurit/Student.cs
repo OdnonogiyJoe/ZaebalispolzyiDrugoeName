@@ -10,7 +10,6 @@ namespace SavaDejurit
         public string LastName { get; set; }
         public string FatherName { get; set; }
         public List<DateTime> VisitLog { get; set; } = new List<DateTime>();
-
         public string Name { get => $"{LastName} {FirstName} {FatherName}"; }
     }
 }
