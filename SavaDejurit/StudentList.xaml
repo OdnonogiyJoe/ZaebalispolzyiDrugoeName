@@ -33,13 +33,16 @@
                 <TextBox Text="{Binding FatherName}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" DockPanel.Dock="Bottom">
-                <Button Content="История дежурства" Command="{Binding VisitLog}" Padding="5" Margin="0"/>
-                <Button Content="Отметить дежурного" Command="{Binding MarkDate}" Padding="5" Margin="5 0 0 0"/>
+                <Button Content="История дежурства" Command="{Binding VisitLog}" Padding="5"/>
+                <Button Content="Отметить дежурного" Command="{Binding MarkDate}" Padding="5"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" DockPanel.Dock="Bottom">
-                <Button Content="Создать" Command="{Binding CreateStudent}" Padding="5" Margin="0 5 5 0"/>
-                <Button Content="Сохранить" Command="{Binding SaveStudent}" Padding="5" Margin="0 5 5 0"/>
-                <Button Content="Удалить" Command="{Binding RemoveStudent}" Padding="5" Margin="0 5 0 0"/>
+                <Button Content="Создать" Command="{Binding CreateStudent}" Padding="5" />
+                <Button Content="Сохранить" Command="{Binding SaveStudent}" Padding="5" />
+                <Button Content="Удалить" Command="{Binding RemoveStudent}" Padding="5"/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom" Height="100" >
+                <Button Content="Выбрать дежурных" Command="{Binding CleanersToPage}" Padding="0 8" Width="188" Margin="20" Height="37"/>
             </StackPanel>
         </DockPanel>
     </Grid>

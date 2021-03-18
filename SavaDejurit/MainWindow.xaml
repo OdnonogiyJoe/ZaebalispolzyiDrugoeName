@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SavaDejurit"
         mc:Ignorable="d"
-        Title="Список студентов" Height="580" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Программа для учета дежурных" Height="580" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Frame Content="{Binding CurrentPage}" NavigationUIVisibility="Hidden"/>
     </Grid>

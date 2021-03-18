@@ -43,6 +43,7 @@ namespace SavaDejurit
         {
             RegisterPageType(PageType.StudentList, typeof(StudentList), typeof(StudentListVM));
             RegisterPageType(PageType.VisitList, typeof(VisitList), typeof(VisitListVM));
+            RegisterPageType(PageType.CleanersList, typeof(CleanersList), typeof(CleanersListVM));
         }
 
         public static void ChangePageTo(PageType type)

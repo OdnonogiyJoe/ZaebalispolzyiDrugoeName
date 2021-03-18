@@ -7,6 +7,7 @@ namespace SavaDejurit
     public enum PageType
     {
         StudentList,
-        VisitList
+        VisitList,
+        CleanersList
     }
 }

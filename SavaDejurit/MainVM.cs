@@ -7,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace SavaDejurit
 {
-    public class MainVM: MvvmNotify
+    public class MainVM : MvvmNotify
     {
         Model model;
 

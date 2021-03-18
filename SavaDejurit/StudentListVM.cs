@@ -15,6 +15,7 @@ namespace SavaDejurit
         public MvvmCommand SaveStudent { get; set; }
         public MvvmCommand VisitLog { get; set; }
         public MvvmCommand MarkDate { get; set; }
+        public MvvmCommand CleanersToPage { get; set; }
 
         public Student SelectedStudent {
             get => model.SelectedStudent;
@@ -55,6 +56,12 @@ namespace SavaDejurit
             MarkDate = new MvvmCommand(
                 () => model.MarkDate(SelectedStudent),
                 () => SelectedStudent != null);
+            CleanersToPage = new MvvmCommand(
+                () =>
+                {
+                    Pages.ChangePageTo(PageType.CleanersList);
+                },
+                () => true);
 
             model.StudentsChanged += Model_StudentsChanged;
         }
@@ -62,7 +69,7 @@ namespace SavaDejurit
         private void Model_StudentsChanged(object sender, System.EventArgs e)
         {
             Students = new ObservableCollection<Student>(model.GetStudents());
-            NotifyPropertyChanged("Clients");
+            NotifyPropertyChanged("Students");
         }
 
     }
